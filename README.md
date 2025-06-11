@@ -20,6 +20,7 @@
 1. [Copies du code](1-copie-du-code)
 2. [solutions du quiz](2-solutions-quiz)
 3. [resources Extra](3-extra)
+Support du cours : https://codingqueen40.github.io/references/Support-HTML.pdf
 
 
 
