@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma page fan de podcast 🎧</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+            margin: 2rem;
+            color: #333;
+            text-align: center;
+        }
+
+        h1 {
+            color: #6c63ff;
+            margin-bottom: 1rem;
+        }
+
+        picture img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        audio,
+        iframe {
+            margin-top: 1.5rem;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .bio {
+            margin-top: 2rem;
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>🎧 Fan de "La voix libre"</h1>
+
+    <!--image responsive-->
+    <picture>
+        <source media="(min-width:1200px)"
+            srcset="https://dummyimage.com/1200x600/6c63ff/ffffff.png&text=Podcast+XL">
+        <source media="(min-width:800px)"
+            srcset="https://placehold.net/6-800x600.png">
+        <img src="https://placehold.net/3.png" alt="Couverture du podcast"
+            width="200">
+    </picture>
+
+    <!--Lecteur audio-->
+    <audio controls>
+        <source
+            src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+            type="audio/mpeg">
+        Ton navigateur ne supporte pas l'audio.
+    </audio>
+
+    <!--vidéo youtube-->
+    <iframe src="https://www.youtube.com/embed/5qap5aO4i9A" frameborder="0"
+        title="Épisode de podcast sur youtube"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        sandbox="allow-same-origin allow-scripts allow-presentation">
+    </iframe>
+
+    <!--Bio-->
+    <div class="bio">
+        <p>
+            “La Voix Libre” est un podcast inspirant que j’écoute dès que j’ai
+            besoin d’un coup de boost.
+            Des sujets forts, une voix apaisante, et toujours un petit déclic à
+            la fin 🎙️
+        </p>
+    </div>
+
+    <!--Intégration d'un snippet HTML'-->
+    <h2>🌐 À propos de la créatrice</h2>
+    <object data="snippet.html" type="text/html" width="600"
+        height="250"></object>
+
+    <!--Intégration PDF-->
+    <h2📄 Télécharger le PDF>
+        </h2>
+        <iframe src="support-html.pdf" frameborder="0" title="programme PDF"
+            width="300" height="200"></iframe>
+</body>
+
+</html>

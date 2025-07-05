@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images Multimédia</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 1rem;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            gap: 1rem;
+            background-color: #f8f8f8;
+        }
+
+        h2 {
+            color: #6c63ff;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #ccc;
+        }
+
+        iframe {
+            border: 2px solid #6c63ff;
+            width: 100%;
+            max-width: 600px;
+            height: 300px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Définition des fichiers multimédia</h2>
+    <ul>
+        <li>🎧 audio</li>
+        <li>🖼️ image</li>
+        <li>🎥 vidéo</li>
+        <li>📊 graphique</li>
+        <li>🗺️ carte interactive</li>
+    </ul>
+
+    <h2>Intégrer des images</h2>
+    <img src="logo.png" alt="Logo du site" width="120">
+
+    <h2>Exemple d'image responsive avec &lt;picture&gt;</h1>
+        <picture>
+            <source media="(min-width:1200px)"
+                srcset="https://dummyimage.com/1200x600/6c63ff/ffffff.png&text=Image+XL">
+            <source media="(min-width:800px)"
+                srcset="https://dummyimage.com/800x400/fab005/000000.png&text=Image+L">
+            <img src="https://dummyimage.com/600x300/cccccc/000000.png&text=Image+par+d%C3%A9faut"
+                alt="Image responsive">
+        </picture>
+        <p>Redimensionne la fenêtre pour voir le changement d'image.</p>
+
+        <h2>Intégrer une vidéo</h2>
+        <video controls width="640">
+            <source
+                src="https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                type="video/mp4">
+            Votre navigateur ne prend pas en charge la balise vidéo.
+        </video>
+
+        <h2>Intégrer de l'audio</h2>
+        <audio controls>
+            <source src="assets/audio.mp3" type="audio/mpeg">
+            <source src="assets/audio.ogg" type="audio/ogg">
+        </audio>
+
+        <h2>Intégrer du contenu externe</h2>
+        <!-- ▶️ YouTube -->
+        <div class="section">
+            <p>🎥 Intégrer une vidéo YouTube iframe</p>
+            <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                sandbox="allow-same-origin allow-scripts allow-presentation">
+            </iframe>
+        </div>
+        <!-- 🌍 Page HTML externe -->
+        <div class="section">
+            <p>🌐 Intégrer une page web externe avec object</p>
+            <object data="snippet.html" width="500" height="200">
+                <p>Le contenu n’a pas pu être chargé. Vérifie que le fichier
+                    existe bien !</p>
+            </object>
+        </div>
+        <!-- 🔒 Message visuel sécurité -->
+        <div class="section">
+            <h2>🔒 Sécurité recommandée avec <code>sandbox</code> &
+                <code>allow</code>
+            </h2>
+            <p>Utilisez toujours ces attributs pour limiter les risques !</p>
+        </div>
+
+
+</body>
+
+</html>
