@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableaux en HTML</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1em 0;
+        }
+
+        caption {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 0.5em;
+        }
+
+        th,
+        td {
+            border: 1px solid #ccc;
+            padding: 0.75em;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        colgroup col.jour {
+            background-color: rgb(163, 214, 244);
+        }
+
+        colgroup col.activite {
+            background-color: #f3e5f5;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>👩🏽‍🦱 Liste des élèves</caption>
+        <tr>
+            <th>Nom</th>
+            <th>Âge</th>
+        </tr>
+        <tr>
+            <td>Eva</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td colspan="2">Réunion parents-profs</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Pause</td>
+            <td>Jeux</td>
+        </tr>
+        <tr>
+            <td>Lecture</td>
+        </tr>
+    </table>
+
+    <table>
+        <caption>📅 Emploi du temps</caption>
+
+        <colgroup>
+            <col span="1" class="jour">
+            <col span="2" class="activite">
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th class="col-jour">Jour</th>
+                <th class="col-activite">Activité</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Lundi</td>
+                <td>Mathématiques</td>
+            </tr>
+
+            <tr>
+                <td>Mardi</td>
+                <td>Sciences</td>
+            </tr>
+        </tbody>
+
+    </table>
+</body>
+
+</html>

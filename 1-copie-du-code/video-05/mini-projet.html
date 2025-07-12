@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 🌴 Planning de vacances</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        caption {
+            font-size: 1.4em;
+            margin-bottom: 0.5em;
+            font-weight: bold;
+        }
+
+        col.jour {
+            background-color: #f0f8ff;
+        }
+
+        col.matin {
+            background-color: #e8f5e9;
+        }
+
+        col.aprem {
+            background-color: #fff3e0;
+        }
+
+        th,
+        td {
+            border: 1px solid #aaa;
+            padding: 1em;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f5f5f5;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption> 🌴 Planning Vacances d'été</caption>
+
+        <colgroup>
+            <col class="jour">
+            <col class="matin">
+            <col class="aprem">
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th scope="col">Jour</th>
+                <th scope="col">Matin</th>
+                <th scope="col">Après-midi</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th scope="row">Lundi</th>
+                <td>Plage</td>
+                <td>Sieste</td>
+            </tr>
+            <tr>
+                <th scope="row">Mardi</th>
+                <td colspan="2">Excursion en montagne</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="3">Semaine 1 terminée ✔️</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>
