@@ -67,7 +67,7 @@ Tu peux me retrouver ici :
 - 📬 [contact@codingqueen40.com](mailto:contact@codingqueen40.com)
 - 📺 Chaîne YouTube : [YouTube – CodingQueen40](https://youtube.com/@codingqueen40)
 - 💻 GitHub : [codingqueen40](https://github.com/codingqueen40)
-- 📥 [Formulaire de contact Notion](https://notionforms.io/forms/contact-codingqueen40)
+- 📬 [Formulaire de contact](https://contact-codingqueen40.netlify.app/)
 
 ---
 
