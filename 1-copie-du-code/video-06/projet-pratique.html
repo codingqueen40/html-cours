@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'inscription</title>
+    <style>
+        /* STYLE GÉNÉRAL */
+        body {
+            font-family: "Segoe UI", sans-serif;
+            background-color: #f9f6fc;
+            margin: 0;
+            padding: 2rem;
+            color: #333;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* CONTAINER DU FORMULAIRE */
+        form {
+            width: 100%;
+            max-width: 500px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(180, 140, 255, 0.1);
+            padding: 2rem;
+            border: 2px solid #e5d4f7;
+        }
+
+        /* CHAMPS + LABELS */
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #5e418f;
+        }
+
+        input,
+        textarea,
+        select {
+            width: 95%;
+            padding: 0.8rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #fafafa;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        input:focus,
+        textarea:focus,
+        select:focus {
+            border-color: #b48cff;
+            outline: none;
+        }
+
+        /* BOUTON */
+        input[type="submit"],
+        button {
+            width: 50%;
+            display: block;
+            margin: 1rem auto 0 auto;
+            background-color: #b48cff;
+            color: white;
+            padding: 0.8rem;
+            font-size: 1rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover,
+        button:hover {
+            background-color: #9e6fe3;
+        }
+
+        /* CHAMPS SPÉCIFIQUES */
+        input[type="password"] {
+            letter-spacing: 0.1em;
+        }
+
+        fieldset {
+            border: 1px solid #d9c1f0;
+            padding: 1.2rem;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+        }
+
+        legend {
+            padding: 0 0.5rem;
+            font-weight: bold;
+            color: #7a58c2;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" method="POST" autocomplete="on">
+
+        <!-- Groupe 1 : Informations personnelles -->
+        <fieldset>
+            <legend> 👤 Informations personnelles</legend>
+
+            <div>
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required
+                    placeholder="Votre nom complet">
+            </div>
+
+            <div>
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required
+                    placeholder="exemple@domaine.com">
+            </div>
+
+            <div>
+                <label for="age">Âge :</label>
+                <input type="number" id="age" min="0" max="100"
+                    placeholder="Ex: 42">
+            </div>
+
+            <div>
+                <label for="password">Mot de passe</label>
+                <input type="password" id="password" name="password" required
+                    minlength="6" placeholder=".....">
+            </div>
+        </fieldset>
+
+        <!-- Groupe 2 : Préférences -->
+        <fieldset>
+            <legend>⚙️ Préférences</legend>
+
+            <div>
+                <label for="pays">Pays :</label>
+                <select name="pays" id="pays" required>
+                    <option value="">--Sélectionner --</option>
+                    <option value="fr">France</option>
+                    <option value="be">Belgique</option>
+                    <option value="ch">Suisse</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="theme">Thème préféré</label>
+                <input list="themes" id="theme" name="theme"
+                    placeholder="ex: Design">
+                <datalist id="themes">
+                    <option value="HTML">
+                    <option value="CSS">
+                    <option value="Javascript">
+                    <option value="Webdesign">
+                </datalist>
+            </div>
+        </fieldset>
+
+        <!-- Groupe 3 : Messages -->
+        <fieldset>
+            <legend>💬 Messages</legend>
+
+            <div>
+                <label for="message">Ton message :</label>
+                <textarea name="message" id="message" rows="5"
+                    placeholder="dis-moi ce que tu veux apprendre..."></textarea>
+            </div>
+        </fieldset>
+
+        <!-- Bouton envoi -->
+        <div>
+            <input type="submit" value="Envoyer le formulaire">
+        </div>
+    </form>
+
+</body>
+
+</html>

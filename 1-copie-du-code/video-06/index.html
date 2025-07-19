@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les formulaires en HTML</title>
+    <style>
+        /* STYLE GÉNÉRAL */
+        body {
+            font-family: "Segoe UI", sans-serif;
+            background-color: #f9f6fc;
+            margin: 0;
+            padding: 2rem;
+            color: #333;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* CONTAINER DU FORMULAIRE */
+        form {
+            width: 100%;
+            max-width: 500px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(180, 140, 255, 0.1);
+            padding: 2rem;
+            border: 2px solid #e5d4f7;
+        }
+
+        /* CHAMPS + LABELS */
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #5e418f;
+        }
+
+        input,
+        textarea,
+        select {
+            width: 95%;
+            padding: 0.8rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #fafafa;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        input:focus,
+        textarea:focus,
+        select:focus {
+            border-color: #b48cff;
+            outline: none;
+        }
+
+        /* BOUTON */
+        input[type="submit"],
+        button {
+            width: 50%;
+            display: block;
+            margin: 1rem auto 0 auto;
+            background-color: #b48cff;
+            color: white;
+            padding: 0.8rem;
+            font-size: 1rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover,
+        button:hover {
+            background-color: #9e6fe3;
+        }
+
+        /* CHAMPS SPÉCIFIQUES */
+        input[type="password"] {
+            letter-spacing: 0.1em;
+        }
+
+        fieldset {
+            border: 1px solid #d9c1f0;
+            padding: 1.2rem;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+        }
+
+        legend {
+            padding: 0 0.5rem;
+            font-weight: bold;
+            color: #7a58c2;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" method="POST">
+        <input type="text">
+        <label for="email"></label>
+        <input type="email" id="email">
+        <input type="password">
+        <input type="submit" value="Je m'inscris">
+    </form>
+</body>
+
+</html>
